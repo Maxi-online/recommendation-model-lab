@@ -1,0 +1,14 @@
+# Optional historical adapters use different frameworks. Resolve one adapter in
+# an isolated environment rather than treating this list as a tested lock file.
+requests
+pandas
+scipy
+scikit-learn
+matplotlib
+pymongo
+tensorflow
+tensorflow-datasets
+tensorflow-recommenders
+lightfm
+fastai
+recommenders

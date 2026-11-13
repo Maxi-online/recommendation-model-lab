@@ -1,0 +1,104 @@
+{
+  "dataset": "synthetic preference groups",
+  "scope": "Portable baseline experiment, not a production or seven-adapter quality benchmark",
+  "environment": {
+    "python": "3.14.2",
+    "numpy": "2.4.0",
+    "device": "cpu"
+  },
+  "runs": [
+    {
+      "seed": 7,
+      "split": {
+        "train_events": 960,
+        "validation_events": 240,
+        "test_events": 240,
+        "train_max_time": 959,
+        "test_min_time": 1200
+      },
+      "protocol": "Global chronological split before fit; train-only vocabulary and negatives; validation not used for tuning; test ranking excludes training positives",
+      "popularity": {
+        "recall_at_k": 0.0375,
+        "ndcg_at_k": 0.02474170333016249,
+        "evaluated_users": 80,
+        "input_events": 240,
+        "cold_user_events_excluded": 0,
+        "cold_item_events_excluded": 0,
+        "previously_seen_pairs_excluded": 0,
+        "k": 10
+      },
+      "bpr_matrix_factorization": {
+        "recall_at_k": 0.5125,
+        "ndcg_at_k": 0.3348655817450329,
+        "evaluated_users": 80,
+        "input_events": 240,
+        "cold_user_events_excluded": 0,
+        "cold_item_events_excluded": 0,
+        "previously_seen_pairs_excluded": 0,
+        "k": 10
+      }
+    },
+    {
+      "seed": 19,
+      "split": {
+        "train_events": 960,
+        "validation_events": 240,
+        "test_events": 240,
+        "train_max_time": 959,
+        "test_min_time": 1200
+      },
+      "protocol": "Global chronological split before fit; train-only vocabulary and negatives; validation not used for tuning; test ranking excludes training positives",
+      "popularity": {
+        "recall_at_k": 0.0625,
+        "ndcg_at_k": 0.03907679766834214,
+        "evaluated_users": 80,
+        "input_events": 240,
+        "cold_user_events_excluded": 0,
+        "cold_item_events_excluded": 0,
+        "previously_seen_pairs_excluded": 0,
+        "k": 10
+      },
+      "bpr_matrix_factorization": {
+        "recall_at_k": 0.5083333333333332,
+        "ndcg_at_k": 0.3314111188444797,
+        "evaluated_users": 80,
+        "input_events": 240,
+        "cold_user_events_excluded": 0,
+        "cold_item_events_excluded": 0,
+        "previously_seen_pairs_excluded": 0,
+        "k": 10
+      }
+    },
+    {
+      "seed": 43,
+      "split": {
+        "train_events": 960,
+        "validation_events": 240,
+        "test_events": 240,
+        "train_max_time": 959,
+        "test_min_time": 1200
+      },
+      "protocol": "Global chronological split before fit; train-only vocabulary and negatives; validation not used for tuning; test ranking excludes training positives",
+      "popularity": {
+        "recall_at_k": 0.07916666666666666,
+        "ndcg_at_k": 0.044543673201657585,
+        "evaluated_users": 80,
+        "input_events": 240,
+        "cold_user_events_excluded": 0,
+        "cold_item_events_excluded": 0,
+        "previously_seen_pairs_excluded": 0,
+        "k": 10
+      },
+      "bpr_matrix_factorization": {
+        "recall_at_k": 0.6083333333333334,
+        "ndcg_at_k": 0.39785634418381305,
+        "evaluated_users": 80,
+        "input_events": 240,
+        "cold_user_events_excluded": 0,
+        "cold_item_events_excluded": 0,
+        "previously_seen_pairs_excluded": 0,
+        "k": 10
+      }
+    }
+  ]
+}
