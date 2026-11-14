@@ -37,3 +37,7 @@
 !/publication_policy.json
 !/.github/workflows/publication-privacy.yml
 !/tests/publication/test_guard.py
+
+!/english_guard.py
+!/english_policy.json
+!/tests/publication/test_english_guard.py
